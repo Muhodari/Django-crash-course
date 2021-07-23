@@ -1,0 +1,22 @@
+<style>
+h5{
+    color:red;
+    }
+</style>
+
+
+<h1> Login Now:</h1>
+
+{% for massage in massages %}
+<h5>message</h5>
+{% endfor %}
+
+
+<form method="POST" action="login">
+    {% csrf_token %}
+    <p>Username:</p>
+<input type="text" name="username"/>
+    <p>Password:</p>
+<input type="password" name="password"/><br>
+<input type="submit" name="submit"/>
+</form>
