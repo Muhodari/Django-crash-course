@@ -102,11 +102,11 @@
             <div class="icon"><i class="ri-stack-line"></i></div>
             <h4 class="title"><a href="">{{feature.name}}</a></h4>
             <p class="description">{{feature.detail}}</p>
-<!--            {% if feature.is_true == True %}-->
-<!--            <p> This feature is True</p>-->
-<!--            {% elif feature.is_true == False %}-->
-<!--            <p> This feature is False  </p>-->
-<!--            {% endif %}-->
+              {% if feature.name == 'Quick' %}
+              <p>our services are more and more fast</p>
+              {% endif %}
+
+
           </div>
         </div>
         {% endfor %}
