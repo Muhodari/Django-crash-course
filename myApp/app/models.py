@@ -6,4 +6,4 @@ class Feature:
     id: int
     name: str
     details:str
-    
+
