@@ -66,6 +66,12 @@ def Login(request):
         return render(request, 'login.html')
 
 
+def Logout(request):
+    auth.logout(request)
+    return redirect('/')
+
+
+
 def counter(request):
     # text = request.GET['text']c
     text = request.POST['text']
