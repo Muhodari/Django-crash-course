@@ -33,10 +33,10 @@ def index(request):
     feature4.name = 'Affordable'
     feature4.details = 'our services are very affordable'
 
-    features=[feature1,feature2,feature3,feature4]
+    features = [feature1, feature2, feature3, feature4]
 
     return render(request, 'static.html',
-                  {'features':features})
+                  {'features': features})
 
 
 def counter(request):
