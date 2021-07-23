@@ -6,6 +6,8 @@ urlpatterns = [
     path('counter', views.counter, name='counter'),
     path('register', views.register, name='register'),
     path('login', views.Login, name='login'),
-    path('logout',views.Logout, name='logout')
+    path('logout', views.Logout, name='logout'),
+    # dynamic url routing
+    path('post/<str:pk>', views.posts, name='post')
 
 ]
